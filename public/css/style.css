@@ -1,1 +1,32 @@
-body { background-color: lightblue; }
+body{
+    background-color: gray;
+    background-image: url(/img/gato.png);   
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    text-size-adjust: auto;
+}
+
+div.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+input[type=button]{
+    border-radius: 25px;
+    color: black;
+    aspect-ratio: 1;
+    width: 20%;
+}
+
+#display{
+    width: 200px;
+    height: 25px;
+}
