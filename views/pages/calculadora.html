@@ -8,11 +8,20 @@
 </head>
 
 <body onkeypress="manipularTeclado()">
+    <h1>Calculadora João Vinícius</h1>
     <div class="container">
         <div class="calc">
             <tr>
                 <td colspan="6"><input type="text" id="display" value="0" disabled></td>
             </tr>
+            <div class="ROW">
+                <tr>
+                    <td><input type="button" value="(" onclick="atualizarDisplay(this)" /></td>
+                    <td><input type="button" value=")" onclick="atualizarDisplay(this)" /></td>
+                    <td><input type="button" value="^" onclick="atualizarOperacao(this)" /></td>
+                    <td><input type="button" value="√" onclick="atualizarOperacao(this)" /></td>
+                </tr>
+            </div>
             <div class="ROW">
                 <tr>
                     <td><input type="button" value="7" onclick="atualizarDisplay(this)" /></td>
@@ -41,8 +50,9 @@
                 <tr>
                     <td><input type="button" value="C" onclick="limparDisplay()" /></td>
                     <td><input type="button" value="0" onclick="atualizarDisplay(this)" /></td>
-                    <td><input type="button" value="=" onclick="calcularOperacao()" /></td>
+                    <td><input type="button" value="." onclick="atualizarDisplay()" /></td>
                     <td><input type="button" value="/" onclick="atualizarOperacao(this)" /></td>
+                    <td><input type="button" value="=" onclick="calcularOperacao()" /></td>
                 </tr>
             </div>
         </div>
